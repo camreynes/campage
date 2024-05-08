@@ -2,9 +2,10 @@ body {
   margin: 0
 }
 
-.pattern-container {
+.container {
+  display: flex;
   position: absolute;
-  height: 100vh;
+  height: 100%;
   width: 100%;
 
   margin: 0;
@@ -13,34 +14,24 @@ body {
   opacity: 0.5;
 }
 
-.pattern {
-  background-image: url('https://i.imgur.com/EQUiOsK.png');
+.opt {
   background-size: 10%;
-
-  width: inherit;
+  width: 33%;
   height: inherit;
 
   animation: slide 400s linear infinite;
 }
 
-.opt-container {
-  position: absolute;
-  display: flex;
-
-  width: 100%;
-  justify-content: space-around;
-  align-items: center;
+.optL {
+  background-image: url('https://i.imgur.com/BvFVqqO.png');
 }
 
-.opt {
-  position: relative;
+.optM {
+  background-image: url('https://i.imgur.com/1iaT348.png');
 }
 
-.opt {
-  width: 100px;
-  height: 100px;
-  background-color: #000;
-  margin: 10px;
+.optR {
+  background-image: url('https://i.imgur.com/Nw4N5cq.png');
 }
 
 @keyframes slide {
